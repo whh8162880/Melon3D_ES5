@@ -1,0 +1,1 @@
+melon release --name stage3d.js -d -nohtml

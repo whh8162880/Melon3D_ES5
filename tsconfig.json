@@ -48,5 +48,7 @@
     "files":[
         "wechat"
     ]
-  }
+  },
+
+  "clientRemote":"../engine"
 }

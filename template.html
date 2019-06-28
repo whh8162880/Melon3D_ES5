@@ -46,7 +46,8 @@
             var requestAnimationFrame = window['requestAnimationFrame'] || window['webkitRequestAnimationFrame'] || window['mozRequestAnimationFrame'] || window['oRequestAnimationFrame'] || window['msRequestAnimationFrame'];
 
             function setup(){
-                
+                var m = new rf.StageDebug();
+                m.init(document.getElementById("game"));
             }
         </script>
 
