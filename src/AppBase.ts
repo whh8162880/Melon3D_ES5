@@ -215,7 +215,6 @@ module rf {
 }
 
 // declare var global;
-
-if(typeof global != "undefined"){
-    global["rf"] = rf;global["rf_v3_identity"] = rf_v3_identity;global["rf_m3_identity"] = rf_m3_identity;global["rf_m2_identity"] = rf_m2_identity;global["rf_m3_temp"] = rf_m3_temp;
-}
+// if(typeof global != "undefined"){
+//     global["rf"] = rf;global["rf_v3_identity"] = rf_v3_identity;global["rf_m3_identity"] = rf_m3_identity;global["rf_m2_identity"] = rf_m2_identity;global["rf_m3_temp"] = rf_m3_temp;
+// }

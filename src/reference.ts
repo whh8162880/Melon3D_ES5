@@ -1,5 +1,3 @@
-///<reference path="../../lib/wechat.d.ts" /> 
-
 ///<reference path="./Interface.ts" /> 
 
 ///<reference path="./core/Config.ts" />

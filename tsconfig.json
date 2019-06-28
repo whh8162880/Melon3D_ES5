@@ -32,7 +32,8 @@
   
   ,
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "lib/*"
   ],
   "exclude": [
     "think/**/*",
@@ -40,5 +41,12 @@
     ".d.ts",
     "Interface"
   ],
-  "templete":"../bin-debug/stage3d.html"
+  "templete":"./template.html",
+
+  "engine":{
+    "remote":"../engine/",
+    "files":[
+        "wechat"
+    ]
+  }
 }
