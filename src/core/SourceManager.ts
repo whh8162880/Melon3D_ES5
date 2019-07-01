@@ -377,11 +377,14 @@ module rf{
     }
 
 
-    export function createUrlSource(url:string,extendtion?:ExtensionDefine,complete?:Function){
+    export function createUrlSource(url:string,extendtion?:ExtensionDefine,complete?:Function,CLS?:{new (url:string):UrlBitmapSource}){
         url = getFullUrl(url,extendtion);
         let source = bitmapSources[url] as UrlBitmapSource;
+        if(!CLS){
+            CLS = UrlBitmapSource;
+        }
         if(!source) {
-            bitmapSources[url] = source = new UrlBitmapSource(url);
+            bitmapSources[url] = source = new CLS(url);
             source.load();
         }else if(source.status == LoadStates.WAIT){
             source.load();
